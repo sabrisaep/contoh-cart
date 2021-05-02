@@ -2,7 +2,9 @@
 session_start();
 
 if (isset($_SESSION['kereta'])) {
+#if (isset($_COOKIE['kereta'])) {
     $kereta = $_SESSION['kereta'];
+    #$kereta = $_COOKIE['kereta'];
 } else {
     $kereta = 0;
 }

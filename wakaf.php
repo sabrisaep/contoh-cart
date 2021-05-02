@@ -2,7 +2,9 @@
 session_start();
 
 if (isset($_SESSION['wakaf'])) {
+#if (isset($_COOKIE['wakaf'])) {
     $wakaf = $_SESSION['wakaf'];
+    #$wakaf = $_COOKIE['wakaf'];
 } else {
     $wakaf = 0;
 }

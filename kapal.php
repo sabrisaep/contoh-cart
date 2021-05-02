@@ -2,7 +2,9 @@
 session_start();
 
 if (isset($_SESSION['kapal'])) {
+#if (isset($_COOKIE['kapal'])) {
     $kapal = $_SESSION['kapal'];
+    #$kapal = $_COOKIE['kapal'];
 } else {
     $kapal = 0;
 }

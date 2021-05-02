@@ -2,31 +2,39 @@
 session_start();
 
 if(isset($_SESSION['kereta'])) {
+#if (isset($_COOKIE['kereta'])) {
     $kereta = $_SESSION['kereta'];
+    #$kereta = $_COOKIE['kereta'];
 } else {
     $kereta = 0;
 }
 
-if(isset($_SESSION['kapal'])) {
+if (isset($_SESSION['kapal'])) {
+#if (isset($_COOKIE['kapal'])) {
     $kapal = $_SESSION['kapal'];
+    #$kapal = $_COOKIE['kapal'];
 } else {
     $kapal = 0;
 }
 
-if(isset($_SESSION['wakaf'])) {
+if (isset($_SESSION['wakaf'])) {
+#if (isset($_COOKIE['wakaf'])) {
     $wakaf = $_SESSION['wakaf'];
+    #$wakaf = $_COOKIE['wakaf'];
 } else {
     $wakaf = 0;
 }
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contoh Cart</title>
 </head>
+
 <body>
     <h1>Senarai Pesanan</h1>
 
@@ -53,4 +61,5 @@ if(isset($_SESSION['wakaf'])) {
         </tr>
     </table>
 </body>
+
 </html>
